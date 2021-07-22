@@ -9,7 +9,15 @@ For input `"5x5 (1, 3) (4, 4)"`, a response could be given of `ENNNDEEEND`, wher
 ![Example route](docs/example-route.PNG)
 
 
-### Run application locally
+### Install application and run from command line
+
+1. Run `pip install -e <<path to project root>>` in your terminal. For example `pip install -e D:\Git\pizzabot-vslleu`.
+
+
+2. Execute from your terminal - `pizzabot "5x5 (1, 3) (4, 4)"`
+
+
+### Run application without installing
 
 #### First Time setup
 Optional - setup virtual env for the project. Run `scripts\setup_env.sh` (windows) `scripts/setup_env.sh` (linux) in your terminal.
@@ -19,7 +27,7 @@ To Activate Virtual env - Run `env\Scripts\activate` (windows) or `env/Scripts/a
 To Deactivate Virtual env - Run `env\Scripts\deactivate` (windows) or `env/Scripts/deactivate` (linux) in your terminal
 
 
-#### Start application
+#### Run application
 Run `.\pizzabot.sh "5x5 (1, 3) (4, 4)"` (windows) or `$ ./pizzabot.sh "5x5 (1, 3) (4, 4)"` (linux) in your terminal
     
 Alternatively run `python -m pizzabot "5x5 (1, 3) (4, 4)"` in your terminal
@@ -32,5 +40,4 @@ Run `python -m unittest -v` in your terminal
 1. Run `coverage run -m unittest -v` in your terminal to run tests with coverage. If you have a virtual env folder (called 'env') `coverage run --omit 'env/*' -m unittest -v`.
 
 
-2. Run `coverage report` in your terminal or `coverage html` to generate report in a 'htmlcov' directory
-
+2. Run `coverage report` in your terminal or `coverage html` to generate report in 'htmlcov' directory

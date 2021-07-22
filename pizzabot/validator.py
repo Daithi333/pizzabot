@@ -11,7 +11,7 @@ class Validator:
                    if (c[0] < grid.x_start or c[0] > grid.x_end)
                    or (c[1] < grid.y_start or c[1] > grid.y_end)]
 
-        log_msg = 'All coordinates valid within grid range' if len(invalid) == 0 \
-            else f'Some coordinates were outside expected range and will be ignored: {invalid}'
+        log_msg = f'All [{len(coords)}] coordinates valid within grid range' if len(invalid) == 0 \
+            else f'[{len(invalid)}] coordinates were outside expected range and will be ignored: {invalid}'
         self.logger.info(log_msg)
         return [c for c in coords if c not in invalid]
