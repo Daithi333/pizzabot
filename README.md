@@ -12,7 +12,7 @@ For input `"5x5 (1, 3) (4, 4)"`, a response could be given of `ENNNDEEEND`, wher
 ### Run application locally
 
 #### First Time setup
-Optional - setup virtual env for the project. Run `scripts\setup_env.sh` (windows) `scripts/setup_env` (linux) in your terminal.
+Optional - setup virtual env for the project. Run `scripts\setup_env.sh` (windows) `scripts/setup_env.sh` (linux) in your terminal.
 
 To Activate Virtual env - Run `env\Scripts\activate` (windows) or `env/Scripts/activate` (linux) in your terminal
 
@@ -20,7 +20,7 @@ To Deactivate Virtual env - Run `env\Scripts\deactivate` (windows) or `env/Scrip
 
 
 #### Start application
-Run `.\pizzabot.sh "5x5 (1, 3) (4, 4)"` (windows) or `$ ./pizzabot "5x5 (1, 3) (4, 4)"` (linux) in your terminal
+Run `.\pizzabot.sh "5x5 (1, 3) (4, 4)"` (windows) or `$ ./pizzabot.sh "5x5 (1, 3) (4, 4)"` (linux) in your terminal
     
 Alternatively run `python -m pizzabot "5x5 (1, 3) (4, 4)"` in your terminal
 
@@ -29,6 +29,8 @@ Alternatively run `python -m pizzabot "5x5 (1, 3) (4, 4)"` in your terminal
 Run `python -m unittest -v` in your terminal
 
 ### Generate test coverage
-1. Run `coverage run -m unittest -v` in your terminal to run tests with coverage
-   
+1. Run `coverage run -m unittest -v` in your terminal to run tests with coverage. If you have a virtual env folder (called 'env') `coverage run --omit 'env/*' -m unittest -v`.
+
+
 2. Run `coverage report` in your terminal or `coverage html` to generate report in a 'htmlcov' directory
+
