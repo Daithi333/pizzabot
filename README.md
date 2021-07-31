@@ -11,7 +11,7 @@ For input `"5x5 (1, 3) (4, 4)"`, a response could be given of `ENNNDEEEND`, wher
 
 ### Install application and run from command line
 
-1. Run `pip install -e <<path to project root>>` in your terminal. For example `pip install -e D:\Git\pizzabot-vslleu`.
+1. Run `pip install -e <<path to project root>>` in your terminal. For example `pip install -e D:\Git\pizzabot`.
 
 
 2. Execute from your terminal - `pizzabot "5x5 (1, 3) (4, 4)"`

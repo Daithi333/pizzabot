@@ -4,4 +4,4 @@ pip install virtualenv
 virtualenv env
 source env/Scripts/activate
 pip install -r requirements.txt
-pip install -r dev_requirements.txt
+pip install -r tests/requirements.txt

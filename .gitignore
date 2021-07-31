@@ -16,3 +16,7 @@ env/
 ## test / coverage
 .coverage
 htmlcov
+
+# docs
+docs/ICO-TechTest-20201101-Branding-CodeChallenge-final.pdf
+docs/README.md
